@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" CodeFile="~/Site.Master.cs" Inherits="Web_Exam.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Master</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <link href="~/Content/StyleSheet.css" rel="stylesheet" type="text/css" />
+        
+</head>
+<body>
+    <form id="form" runat="server">
+    <div class="clasediv_">
+            <asp:ContentPlaceHolder ID="body" runat="server" ></asp:ContentPlaceHolder>
+    </div>
+
+    <div>
+            <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+</body>
+</html>
