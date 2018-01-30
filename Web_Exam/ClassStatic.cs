@@ -11,6 +11,5 @@ namespace Web_Exam
     {
         public static User UsuarioLogg;
  
-
     }
 }

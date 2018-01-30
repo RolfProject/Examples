@@ -210,6 +210,7 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Login_App.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -304,6 +305,13 @@
     <Compile Include="Controller\ConUsers.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login_App.aspx.cs">
+      <DependentUpon>Login_App.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login_App.aspx.designer.cs">
+      <DependentUpon>Login_App.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\User.cs" />

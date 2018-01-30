@@ -18,6 +18,9 @@ namespace Web_Exam.Views
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (ClassStatic.UsuarioLogg == null)
+                Response.Redirect("~/Login_App.aspx");
+
             FechaNac.Attributes.Add("readonly", "readonly");
 
             conUsers.SelectedUser(0, "");
