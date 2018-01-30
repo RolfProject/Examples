@@ -1,4 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebE_Register.aspx.cs" Inherits="Web_Exam.Views.WebE_Register" MasterPageFile="~/Site.Master"%>
+<asp:Content runat="server" ContentPlaceHolderID="head">
+    <title> Registrar </title>
+</asp:Content>
+
 <asp:content runat="server" ContentPlaceHolderID="body"> 
     <div class="clasediv">
         <table>

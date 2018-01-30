@@ -5,13 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Master</title>
+    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-        <link href="~/Content/StyleSheet.css" rel="stylesheet" type="text/css" />
-        
+        <link href="~/Content/StyleSheet.css" rel="stylesheet" type="text/css" />        
 </head>
 <body>
+    <ul>
+      <li><a href="Home.aspx">Home</a></li>
+      <li><a href="WebE_Register.aspx">Register</a></li>
+       <li><a href="Clientes.aspx">Clients</a></li>
+      <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+    <br />
     <form id="form" runat="server">
     <div class="clasediv_">
             <asp:ContentPlaceHolder ID="body" runat="server" ></asp:ContentPlaceHolder>

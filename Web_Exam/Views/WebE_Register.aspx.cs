@@ -14,6 +14,7 @@ namespace Web_Exam.Views
     public partial class WebE_Register : System.Web.UI.Page
     {
         ConUsers conUsers = new ConUsers();
+        ConLogin ConLogin = new ConLogin();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,6 +25,9 @@ namespace Web_Exam.Views
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
+
+            ConLogin.LoginUser("sincorreo@sincorreo.com", "admin12345");
+
             User model = new User();
             model.Nombre =      TxtNombre.Text;
             model.Pwd =         TxtPwd.Text;

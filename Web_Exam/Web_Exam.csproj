@@ -41,6 +41,9 @@
     <Reference Include="AjaxControlToolkit">
       <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="EnCrypted_RS">
+      <HintPath>Content\EnCrypted_RS.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="pvCon_01">
       <HintPath>Content\pvCon_01.dll</HintPath>
@@ -237,6 +240,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Clientes.aspx" />
+    <Content Include="Views\Home.aspx" />
     <Content Include="Views\WebE_Register.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -293,10 +297,11 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="ClassStatic.cs" />
     <Compile Include="Controller\ConClientes.cs" />
+    <Compile Include="Controller\ConLogin.cs" />
     <Compile Include="Controller\Connection.cs" />
     <Compile Include="Controller\ConUsers.cs" />
-    <Compile Include="Controller\_Encrypted.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -330,6 +335,13 @@
     </Compile>
     <Compile Include="Views\Clientes.aspx.designer.cs">
       <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\WebE_Register.aspx.cs">
       <DependentUpon>WebE_Register.aspx</DependentUpon>

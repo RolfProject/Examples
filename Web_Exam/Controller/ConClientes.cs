@@ -16,12 +16,9 @@ namespace Web_Exam.Controller
     public class ConClientes
     {
         Connection ClasConexion = new Connection();
-        _Encrypted ClsEncryp = new _Encrypted();
         
         public ConClientes() 
         {}
-
-        
 
         public string InsertCliente(List<Cliente> ListClientes, Cliente model = null)
         {

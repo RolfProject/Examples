@@ -12,7 +12,6 @@ namespace Web_Exam.Controller
     public class ConUsers
     {
         Connection ClasConexion = new Connection();
-        _Encrypted ClsEncryp = new _Encrypted();
 
         public DataTable ExecOperacionesUser(int op, string correo, string pwd = null, string Nombre = null,
                                               string Ap_Paterno = null, string Ap_Materno = null,DateTime? FechaNac=null,int? TipoUsuario=null)
@@ -115,7 +114,7 @@ namespace Web_Exam.Controller
         {
             string rest = string.Empty;
 
-            item.Pwd = ClsEncryp.Encrypt(item.Pwd);
+            item.Pwd = EnCrypted_RS._Encrypted.Encrypt(item.Pwd);
 
             try
             {
