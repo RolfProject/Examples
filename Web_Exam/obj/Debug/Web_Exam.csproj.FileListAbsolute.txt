@@ -78,4 +78,3 @@ C:\MAVI\Web_ExamGit\Web_Exam\bin\es\Microsoft.AspNet.Membership.OpenAuth.resourc
 C:\MAVI\Web_ExamGit\Web_Exam\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
 C:\MAVI\Web_ExamGit\Web_Exam\obj\Debug\Web_Exam.dll
 C:\MAVI\Web_ExamGit\Web_Exam\obj\Debug\Web_Exam.pdb
-C:\MAVI\Web_ExamGit\Web_Exam\obj\Debug\Web_Exam.csprojResolveAssemblyReference.cache

@@ -11,6 +11,6 @@ namespace Web_Exam
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.EnableFriendlyUrls();
-        }
+        } 
     }
 }

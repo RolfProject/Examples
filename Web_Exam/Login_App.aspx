@@ -20,11 +20,10 @@
                     <td><asp:Label ID="Label2" Text="Password" runat="server"></asp:Label></td>
                     <td><asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox></td>
                 </tr>
-                <tr>
-                    <td><asp:Button ID="btnCancelar" Text="Cancelar" runat="server" OnClick="btnCancelar_Click" /></td>
-                    <td><asp:Button ID="btnIngresar"  Text="Ingresar" runat="server" OnClick="btnIngresar_Click" /></td>
-                </tr>
             </table>
+        <br />
+        <asp:Button ID="btnCancelar" Text="Cancelar" runat="server" OnClick="btnCancelar_Click"/>
+        <asp:Button ID="btnIngresar"  Text="Ingresar" runat="server" OnClick="btnIngresar_Click" />
     </div>
     </form>
 </body>
