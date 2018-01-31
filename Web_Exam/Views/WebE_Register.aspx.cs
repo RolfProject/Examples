@@ -23,14 +23,13 @@ namespace Web_Exam.Views
 
             FechaNac.Attributes.Add("readonly", "readonly");
 
-            conUsers.SelectedUser(0, "");
+            Page.Title = "Register";
+
+
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-
-            ConLogin.LoginUser("sincorreo@sincorreo.com", "admin12345");
-
             User model = new User();
             model.Nombre =      TxtNombre.Text;
             model.Pwd =         TxtPwd.Text;
@@ -66,6 +65,7 @@ namespace Web_Exam.Views
             TxtAp_Paterno.Text = string.Empty;
             FechaNac.Text = string.Empty;
 
+            Response.Redirect("~/Home.aspx");
         }
     }
 }

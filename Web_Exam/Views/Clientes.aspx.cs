@@ -28,12 +28,17 @@ namespace Web_Exam.Views
                 Response.Redirect("~/Login_App.aspx");
 
             FechaNac.Attributes.Add("readonly", "readonly");
+
+            Page.Title = "Customers";
         }
 
         protected void AddClient_Click(object sender, EventArgs e)
         {
             if (txtName.Text == string.Empty | Ap_Paterno.Text == string.Empty | Ap_Materno.Text == string.Empty | FechaNac.Text == string.Empty | Edad.Text == string.Empty)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('*Error* Debe llenar todos los campos');", true);
                 return;
+            }
 
 
             Cliente model = new Cliente();

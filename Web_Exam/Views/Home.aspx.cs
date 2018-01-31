@@ -14,6 +14,15 @@ namespace Web_Exam.Views
             if (ClassStatic.UsuarioLogg == null)
                 Response.Redirect("~/Login_App.aspx");
 
+            Page.Title = "HOME";
+        }
+
+        protected void SingOut_Click(object sender, EventArgs e)
+        {
+            ClassStatic.UsuarioLogg = null;
+
+            Response.Redirect("~/Login_App.aspx");
+
         }
     }
 }

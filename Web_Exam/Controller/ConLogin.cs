@@ -73,7 +73,10 @@ namespace Web_Exam.Controller
                     cnn.Close();
             }
 
-            return model;
+            if (model.Id_User == 0)
+                return null;
+            else
+                return model;
 
         }
 

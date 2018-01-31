@@ -13,5 +13,13 @@ namespace Web_Exam
         {
 
         }
+
+        protected void SingOut_Click(object sender, EventArgs e)
+        {
+            ClassStatic.UsuarioLogg = null;
+
+            Response.Redirect("~/Login_App.aspx");
+
+        }
     }
 }

@@ -14,11 +14,15 @@
     <ul>
       <li><a href="Home.aspx">Home</a></li>
       <li><a href="WebE_Register.aspx">Register</a></li>
-       <li><a href="Clientes.aspx">Clients</a></li>
+      <li><a href="Clientes.aspx">Clients</a></li>
       <li style="float:right"><a href="#about">About</a></li>
     </ul>
     <br />
+        
     <form id="form" runat="server">
+    <asp:LinkButton ID="SingOut" Text="Cerrar Sesion" runat="server" OnClick="SingOut_Click" CssClass="Link"></asp:LinkButton>
+        <br />
+        <br />
     <div class="clasediv_">
             <asp:ContentPlaceHolder ID="body" runat="server" ></asp:ContentPlaceHolder>
     </div>
