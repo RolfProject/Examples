@@ -67,5 +67,21 @@ namespace Web_Exam.Views
 
             Response.Redirect("~/Home.aspx");
         }
+
+        private void ValidateTipo(int tipo)
+        {
+            if (ClassStatic.UsuarioLogg.TipoUsuario == 1)
+            {
+                lblTipo.Visible = false;
+                CmbTipos.Visible = false;
+            }
+            else
+            {
+                lblTipo.Visible = true;
+                CmbTipos.Visible = true;
+
+
+            }
+        }
     }
 }

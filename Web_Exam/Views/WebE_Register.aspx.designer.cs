@@ -148,6 +148,24 @@ namespace Web_Exam.Views {
         protected global::System.Web.UI.WebControls.ImageButton Calendar_;
         
         /// <summary>
+        /// Control lblTipo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTipo;
+        
+        /// <summary>
+        /// Control CmbTipos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.ComboBox CmbTipos;
+        
+        /// <summary>
         /// Control btnRegistrar.
         /// </summary>
         /// <remarks>

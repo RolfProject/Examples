@@ -28,13 +28,17 @@
                   <td><asp:TextBox runat="server" ID="TxtAp_Materno"></asp:TextBox></td>
             </tr>
             <tr>
-                    <td><asp:Label ID="Label7" runat="server" Text="Fecha Nacimiento:"></asp:Label></td>
-                    <td>
-                        <asp:ScriptManager ID="Script" runat="server" EnableScriptGlobalization="true" CompositeScript-ResourceUICultures="es-MX"></asp:ScriptManager>
-                        <asp:CalendarExtender ID="CalendarT" runat="server"  TargetControlID="FechaNac" Animated="true"  PopupButtonID="Calendar_"/>
-                        <asp:TextBox runat="server" ID="FechaNac" ReadOnly="false"></asp:TextBox>
-                        <asp:ImageButton ID="Calendar_" runat="server" ImageUrl="~/Images/calendar_clipart_.png" ImageAlign="AbsMiddle"/>
-                     </td>
+                  <td><asp:Label ID="Label7" runat="server" Text="Fecha Nacimiento:"></asp:Label></td>
+                  <td>
+                     <asp:ScriptManager ID="Script" runat="server" EnableScriptGlobalization="true" CompositeScript-ResourceUICultures="es-MX"></asp:ScriptManager>
+                     <asp:CalendarExtender ID="CalendarT" runat="server"  TargetControlID="FechaNac" Animated="true"  PopupButtonID="Calendar_"/>
+                     <asp:TextBox runat="server" ID="FechaNac" ReadOnly="false"></asp:TextBox>
+                     <asp:ImageButton ID="Calendar_" runat="server" ImageUrl="~/Images/calendar_clipart_.png" ImageAlign="AbsMiddle"/>
+                  </td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="lblTipo" runat="server" Text="Tipo Usuario"></asp:Label></td>
+                <td> <asp:ComboBox runat="server" ID="CmbTipos"></asp:ComboBox> </td>
             </tr>
         </table>
         <br />

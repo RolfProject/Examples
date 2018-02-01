@@ -276,6 +276,7 @@
       <DependentUpon>Login_App.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\TiposUser.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

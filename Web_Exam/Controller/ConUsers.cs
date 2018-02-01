@@ -133,5 +133,13 @@ namespace Web_Exam.Controller
             return rest;
         }
 
+
+        public List<TiposUser> GetTypeUser()
+        {
+            string query = "select idTipo,tipo,descripcion from TiposUsers with(nolock) where Enabled_T=1";
+
+
+ 
+        }
     }
 }
